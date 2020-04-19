@@ -4,6 +4,28 @@
 	<p style="text-align: center;">&nbsp;</p>
 		</head>
 
+<head>
+<meta charset="utf-8">
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+
+  <script>
+  $(document).ready(function(){
+  $('#btnFadeout').click(function(){
+    $('#box').fadeOut(500);
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn(3000);
+  }); 
+});
+</script>
+<p>
+<input type="button" id="btnFadeout" value="淡入淡出">
+</head>
+</p>
+<p>&nbsp;</p>
+<div id="box">先做個試驗</div>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
 	<body>
 
 
